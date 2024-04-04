@@ -1,0 +1,221 @@
+<!-- 
+  Hello 😊.
+
+  This template is designed and developed by Nisar Hassan Naqvi
+  for anyone to use for free or customize the way they like.
+
+  Github Repo: https://github.com/nisarhassan12/portfolio-template/
+  My Website: https://nisar.dev
+
+  For business & inquires, contact me => syednisarhassan12@gmail.com
+-->
+
+<!--
+  Follow the instructions written in comments to create your stunning portfolio
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+
+  <!-- Put your site title here -->
+  <title>
+    Nathanaël Miesch | Etudiant en développement à Nancy
+  </title>
+
+  <meta name="description" content="Add small description of yourslef.">
+  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+  <meta name="keywords" content="Put your name, skills and some coding keywords" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+  <!-- ***** Header ***** -->
+
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#work" class="nav__link">Projets</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">À propos</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <!-- Replace the following name with your name -->
+          <span>Nathanaël Miesch</span>
+        </h1>
+        <!-- Put a small paragraph about yourself -->
+        <p>Étudiant en développement à Nancy</p>
+        <a href="#contact" class="btn btn--pink">Me contacter</a>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- ***** Work ***** -->
+
+    <section class="work" id="work">
+      <div class="row">
+        <h2>Mes projets</h2>
+        <div class="work__boxes">
+
+          <!-- Each div with the work__box class is a project. -->
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Projet d'optimisation</h3>
+              <p>
+                Ce projet a pour but de compresser des images en réduisant le nombre de couleurs tout en restant fidèle à l'image. Le tout de manière rapide et efficace.
+              </p>
+              <p>Le programme va :</p>
+              <ul class="work__list">
+                <li>parcourir l'image</li>
+                <li>lister les couleurs les plus utilisées</li>
+                <li>les trier en histogramme</li>
+                <li>faire de la clusterisation avec l'histogramme comme départ</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://github.com/miesch3u/SAE_opti" target="_blank" class="link__text">
+                  Visiter le dépôt github <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/MathsYeux" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/screen_projet_opti.png" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Raytracing</h3>
+              <p>
+                Nous n'avons codé que la partie multithreadée du raytracing. Le but était de comprendre le fonctionnement de la programmation multithreadée et de l'appliquer à un projet concret.
+                Le projet permet ainsi de répartir la charge de calcul sur plusieurs coeurs du processeur. Voici un exemple de l'image où on a caché les résultats de la moitié des threads (le découpage se fait en fonction du nombre de threads alloués).
+              </p>
+
+              <div class="work__links">
+                <a href="https://github.com/MathsYeux/raytracing" target="_blank" class="link__text">
+                  Visiter le dépôt github <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/MathsYeux" target="_blank" >
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/raytracing_rendu.png" class="work__image" alt="rendu"/>
+              <br> <!-- Saut de ligne -->
+              <img src="./images/raytracing_archi.png" class="work__image" alt="archi"/>
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Crazy charly day</h3>
+              <p>
+                Le sujet de ce Crazy Charly Day était de créer un site web permettant à des candidats pour des ateliers de cuisine de s'incrire et de faire des voeux. La partie de ce projet à laquelle j'ai été assigné était la répartition des affectations de manière à plaire au plus de candidats possibles.
+                Le projet n'a malheureusement pas abouti, néammoins le programme java fonctionne selon une version simplifiée de l'algorithme de recuit simulé (et retourne un tableau JSON).
+              </p>
+
+              <div class="work__links">
+                <a href="https://github.com/NicoRiri/CrazyCharlyDay2024/" target="_blank" class="link__text">
+                  Visiter le dépôt github <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/MathsYeux" target="_blank" >
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/CCD.png" class="work__image" alt="Project 3" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** About ***** -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <h2>À propos de moi</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <!-- Replace the below paragraph with info about yourself -->
+            <p>
+              Je m'appelle Nathanaël et je suis étudiant en 3ème année de BUT Informatique, spécialisé en développement backend.<br>
+              Je suis passionné par la programmation et je suis toujours à la recherche de nouveaux projets à réaliser.<br>
+              J'aime le tir à l'arc, j'ai été pompier quelques années et je suis passionné de jeux vidéos.<br>
+              Je suis actuellement à la recherche d'un stage de fin d'études pour une durée de 14 à 16 semaines, à partir du 15 avril 2024.<br>
+            </p>
+            <!-- Provide a link to your resume -->
+            <a href="CV%20Nathanaël%20Miesch.pdf" download="MonCV.pdf" class="btn">Mon CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Me contacter</h2>
+      <div class="contact__info">
+        <p>
+          N'hésitez pas à me contacter pour discuter de vos besoins ou simplement pour dire "Bonjour 👋". Je répondrai à vos messages dans les plus brefs délais.<br>
+
+          Le moyen le plus rapide de me contacter est par e-mail.<br><br>
+
+          À bientôt,
+
+          Nathanaël Miesch
+        </p>
+        <!-- Replace the email with yours -->
+        <a href="mailto:mieschnathanael@gmail.com" target="_blank" class="btn">mieschnathanael@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
+      <p>
+        &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" target="_blank" class="link">Nisar</a>.
+      </p>
+      <div class="footer__github-buttons">
+        <iframe
+          src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
+          frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
+        </iframe>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
+</body>
+
+</html>
